@@ -8,8 +8,8 @@
 </settings>
 
 	<typeAliases>
-		<typeAlias alias="pastVO" type="com.hanbit.there.api.vo.PastVO"/>
-		
+		<typeAlias alias="exhibitionVO" type="com.hanbit.there.api.vo.ExhibitionVO"/>
+
 	</typeAliases>
-	
+
 </configuration>

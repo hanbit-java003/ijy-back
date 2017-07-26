@@ -1,10 +1,10 @@
 package com.hanbit.there.api.vo;
 
-public class PastVO {
+public class ExhibitionVO {
 	
 	private String id;
-	private String title;
 	private String img;
+	private String title;
 	private String dateDT;
 	
 	public String getId() {
@@ -13,17 +13,17 @@ public class PastVO {
 	public void setId(String id) {
 		this.id = id;
 	}
-	public String getTitle() {
-		return title;
-	}
-	public void setTitle(String title) {
-		this.title = title;
-	}
 	public String getImg() {
 		return img;
 	}
 	public void setImg(String img) {
 		this.img = img;
+	}
+	public String getTitle() {
+		return title;
+	}
+	public void setTitle(String title) {
+		this.title = title;
 	}
 	public String getDateDT() {
 		return dateDT;
@@ -31,5 +31,4 @@ public class PastVO {
 	public void setDateDT(String dateDT) {
 		this.dateDT = dateDT;
 	}
-
 }
