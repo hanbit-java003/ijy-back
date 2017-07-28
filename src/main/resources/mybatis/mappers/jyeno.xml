@@ -14,4 +14,9 @@
 		  FROM tbl_concert
 	</select>
 
+	<select id="selectArtist" parameterType="string" resultType="artistVO">
+		SELECT id, name, img, summary
+		  FROM tbl_artist
+	</select>
+
 </mapper>

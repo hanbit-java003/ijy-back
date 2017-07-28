@@ -9,6 +9,7 @@
 
 	<typeAliases>
 		<typeAlias alias="exhibitionVO" type="com.hanbit.there.api.vo.ExhibitionVO"/>
+		<typeAlias alias="artistVO" type="com.hanbit.there.api.vo.ArtistVO"/>
 
 	</typeAliases>
 

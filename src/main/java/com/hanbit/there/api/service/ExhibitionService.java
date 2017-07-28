@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.hanbit.there.api.dao.ExhibitionDAO;
+import com.hanbit.there.api.vo.ArtistVO;
 import com.hanbit.there.api.vo.ExhibitionVO;
 
 @Service
@@ -20,5 +21,9 @@ public class ExhibitionService {
 
 	public List<ExhibitionVO> listPastExhibitions() {
 		return exhibitionDAO.selectPastExhibitions();
+	}
+
+	public List<ArtistVO> listArtist() {
+		return exhibitionDAO.selectArtist();
 	}
 }
