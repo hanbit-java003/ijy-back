@@ -1,11 +1,10 @@
 package com.hanbit.there.api.vo;
 
-public class ArtistVO {
+public class MusicArtistVO {
 
 	private String id;
-	private int atId;
+	private int msId;
 	private String name;
-	private String img;
 	private String summary;
 
 	public String getId() {
@@ -14,23 +13,17 @@ public class ArtistVO {
 	public void setId(String id) {
 		this.id = id;
 	}
-	public int getAtId() {
-		return atId;
+	public int getMsId() {
+		return msId;
 	}
-	public void setAtId(int atId) {
-		this.atId = atId;
+	public void setMsId(int msId) {
+		this.msId = msId;
 	}
 	public String getName() {
 		return name;
 	}
 	public void setName(String name) {
 		this.name = name;
-	}
-	public String getImg() {
-		return img;
-	}
-	public void setImg(String img) {
-		this.img = img;
 	}
 	public String getSummary() {
 		return summary;

@@ -22,8 +22,4 @@ public class ExhibitionService {
 	public List<ExhibitionVO> listPastExhibitions() {
 		return exhibitionDAO.selectPastExhibitions();
 	}
-
-	public List<ArtistVO> listArtist() {
-		return exhibitionDAO.selectArtist();
-	}
 }

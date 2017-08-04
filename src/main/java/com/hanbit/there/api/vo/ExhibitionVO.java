@@ -1,12 +1,13 @@
 package com.hanbit.there.api.vo;
 
 public class ExhibitionVO {
-	
+
 	private String id;
 	private String img;
 	private String title;
 	private String dateDT;
-	
+	private int no;
+
 	public String getId() {
 		return id;
 	}
@@ -30,5 +31,11 @@ public class ExhibitionVO {
 	}
 	public void setDateDT(String dateDT) {
 		this.dateDT = dateDT;
+	}
+	public int getNo() {
+		return no;
+	}
+	public void setNo(int no) {
+		this.no = no;
 	}
 }

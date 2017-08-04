@@ -7,16 +7,25 @@
 	<select id="selectPastExhibitions" resultType="exhibitionVO">
 		SELECT id, title, img, dateDT
 		  FROM tbl_past
+		 ORDER BY no DESC
 	</select>
 
 	<select id="selectMusicConcert" resultType="exhibitionVO">
-		SELECT id, title, img, dateDT
+		SELECT id, title, img, dateDT, no
 		  FROM tbl_concert
+		 ORDER BY no
 	</select>
 
 	<select id="selectArtist" parameterType="string" resultType="artistVO">
-		SELECT id, name, img, summary
+		SELECT id, at_id, name, img, summary
 		  FROM tbl_artist
+		 ORDER BY at_id
+	</select>
+
+	<select id="selectMusic" parameterType="string" resultType="musicVO">
+		SELECT id, ms_id, name, summary
+		  FROM tbl_music
+		 WHERE id = #{id}
 	</select>
 
 </mapper>
