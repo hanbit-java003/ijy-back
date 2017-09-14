@@ -28,4 +28,9 @@
 		 WHERE id = #{id}
 	</select>
 
+	<select id="selectNews" resultType="NewsVO">
+		SELECT id, no, title, date_dt, views
+		  FROM tbl_press
+	</select>
+
 </mapper>
