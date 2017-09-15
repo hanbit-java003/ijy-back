@@ -7,6 +7,7 @@ public class NewsVO {
 	private String title;
 	private String dateDt;
 	private int views;
+	private String article;
 
 	public int getNo() {
 		return no;
@@ -37,5 +38,11 @@ public class NewsVO {
 	}
 	public void setId(String id) {
 		this.id = id;
+	}
+	public String getArticle() {
+		return article;
+	}
+	public void setArticle(String article) {
+		this.article = article;
 	}
 }

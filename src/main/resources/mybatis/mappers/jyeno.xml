@@ -29,7 +29,7 @@
 	</select>
 
 	<select id="selectNews" resultType="NewsVO">
-		SELECT id, no, title, date_dt, views
+		SELECT id, no, title, date_dt, views, article
 		  FROM tbl_press
 	</select>
 
