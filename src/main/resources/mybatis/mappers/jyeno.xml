@@ -29,8 +29,15 @@
 	</select>
 
 	<select id="selectNews" resultType="NewsVO">
-		SELECT id, no, title, date_dt, views, article
+		SELECT id, no, title, date_dt, views
 		  FROM tbl_press
 	</select>
+
+	<insert id="insertContact" parameterType="contactVO">
+		INSERT INTO tbl_contact
+			(name, email, title, text)
+		VALUES
+			(#{name}, #{email}, #{title}, #{text})
+	</insert>
 
 </mapper>
