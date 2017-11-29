@@ -13,6 +13,7 @@
 		<typeAlias alias="musicVO" type="com.hanbit.there.api.vo.MusicArtistVO"/>
 		<typeAlias alias="newsVO" type="com.hanbit.there.api.vo.NewsVO"/>
 		<typeAlias alias="contactVO" type="com.hanbit.there.api.vo.ContactVO"/>
+		<typeAlias alias="articleVO" type="com.hanbit.there.api.vo.ArticleVO"/>
 
 	</typeAliases>
 

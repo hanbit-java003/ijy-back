@@ -33,6 +33,13 @@
 		  FROM tbl_press
 	</select>
 
+	<select id="selectArticle" resultType="ArticleVO">
+		SELECT p.id, p.no, p.title, article
+		  FROM tbl_press p
+	 LEFT JOIN tbl_article a
+	        ON p.id = a.id
+	</select>
+
 	<insert id="insertContact" parameterType="contactVO">
 		INSERT INTO tbl_contact
 			(name, email, title, text)
